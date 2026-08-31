@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BettaFish · Co-research platform</title>
+<meta name="description" content="BettaFish brings your group's collaboration, literature, writing, data and analysis onto one platform. Six modules, each available on its own or bundled into a full research workflow.">
+<link rel="canonical" href="https://bettafish.site/en/">
+<link rel="alternate" hreflang="en" href="https://bettafish.site/en/">
+<link rel="alternate" hreflang="zh-CN" href="https://bettafish.site/">
+<link rel="alternate" hreflang="x-default" href="https://bettafish.site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BettaFish · Co-research platform">
+<meta property="og:description" content="From reading papers together to doing research together. Six modules, on their own or bundled into a full research workflow.">
+<meta property="og:url" content="https://bettafish.site/en/">
+<meta property="og:locale" content="en">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+</head>
+<body>
+
+<!-- ── header ───────────────────────────────────────────── -->
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+  <div class="wrap flex h-[68px] items-center justify-between gap-6">
+    <div class="flex items-center gap-8">
+      <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="BettaFish home">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 12c4-6 11-7 15-3-4 4-11 5-15 3z"></path><path d="M18 9l3-3v12l-3-3"></path><circle cx="8" cy="11" r="1"></circle>
+        </svg>
+        <span class="font-display text-xl font-bold">BettaFish</span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm text-[#4c525c] lg:flex" aria-label="Main navigation">
+        <a href="#modules" class="transition hover:text-brand">Modules</a>
+        <a href="#collab" class="transition hover:text-brand">Collaboration</a>
+        <a href="#fields" class="transition hover:text-brand">Fields</a>
+        <a href="#pricing" class="transition hover:text-brand">Pricing</a>
+      </nav>
+    </div>
+    <div class="hidden items-center gap-5 text-sm lg:flex">
+      <a href="/" hreflang="zh-CN" class="text-[#6a707a] transition hover:text-brand">中文</a>
+      <a href="https://bettafish.cc/" class="text-[#4c525c] transition hover:text-brand">Sign in</a>
+      <a href="#contact" class="rounded-md bg-brand px-5 py-2.5 font-medium text-white transition hover:bg-brand-dark">Get started free</a>
+    </div>
+    <button type="button" id="navToggle" class="-mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-ink lg:hidden" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <svg id="navIconOpen" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      <svg id="navIconClose" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" hidden class="border-t border-line bg-white lg:hidden" aria-label="Mobile navigation">
+    <div class="wrap flex flex-col gap-1 py-4 text-[15px]">
+      <a href="#modules" class="rounded-md px-2 py-3 hover:bg-surface">Modules</a>
+      <a href="#collab" class="rounded-md px-2 py-3 hover:bg-surface">Collaboration</a>
+      <a href="#fields" class="rounded-md px-2 py-3 hover:bg-surface">Fields</a>
+      <a href="#pricing" class="rounded-md px-2 py-3 hover:bg-surface">Pricing</a>
+      <a href="https://bettafish.cc/" class="rounded-md px-2 py-3 hover:bg-surface">Sign in</a>
+      <a href="/" hreflang="zh-CN" class="rounded-md px-2 py-3 hover:bg-surface">中文</a>
+      <a href="#contact" class="btn-primary mt-2">Get started free</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ── hero ─────────────────────────────────────────────── -->
+<section class="bg-white pt-16 sm:pt-20">
+  <div class="wrap flex flex-col items-center gap-6 text-center">
+    <span class="eyebrow rounded-full bg-brand-soft px-4 py-1.5 tracking-[0.08em]">CO-RESEARCH PLATFORM</span>
+    <h1 class="max-w-4xl text-[34px] font-bold leading-[1.3] tracking-tight sm:text-[42px] lg:text-[48px]">
+      From reading papers together<br class="hidden sm:block">to doing research together
+    </h1>
+    <p class="max-w-2xl text-base leading-[1.9] text-muted sm:text-[17px]">
+      BettaFish brings your group's collaboration, literature, writing, data and analysis onto one platform. Six modules, each available on its own or bundled into a full research workflow.
+    </p>
+    <div class="flex flex-col items-stretch gap-3.5 pt-1 sm:flex-row sm:items-center">
+      <a href="#contact" class="btn-primary">Get started free</a>
+      <a href="#modules" class="btn-ghost">See the six modules <span aria-hidden="true">▸</span></a>
+    </div>
+    <p class="text-[13px] text-faint">The Personal plan is free, with no trial limit</p>
+  </div>
+
+  <!-- product frame -->
+  <div class="wrap mt-12 sm:mt-14">
+    <div class="mx-auto max-w-[1180px] overflow-hidden rounded-t-xl border border-[#dde2ea] bg-white shadow-frame">
+      <div class="flex items-center gap-2 border-b border-[#e6eaf0] bg-[#f7f8fb] px-4 py-3">
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="ml-3 truncate font-display text-xs text-faint">bettafish.site — paper reading mode (illustrative UI, sample data)</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-[200px_minmax(0,1fr)]">
+        <aside class="hidden flex-col gap-1 bg-navy p-4 md:flex">
+          <div class="flex items-center gap-2 px-2.5 pb-4 pt-1.5">
+            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c4-6 11-7 15-3-4 4-11 5-15 3z"></path><path d="M18 9l3-3v12l-3-3"></path></svg>
+            <span class="font-display text-[15px] font-bold text-white">BettaFish</span>
+          </div>
+          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Dashboard</span>
+          <span class="rounded bg-brand px-2.5 py-2.5 text-[13px] text-white">Groups</span>
+          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Conferences</span>
+          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Profile</span>
+          <div class="mt-auto border-t border-[#12293d] pt-3">
+            <span class="font-display text-[11px] text-[#5c6875]">Sample group · 6 members</span>
+          </div>
+        </aside>
+
+        <div class="flex flex-col gap-3.5 p-5 sm:p-6">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-faint">Groups ／ [Sample Group] ／ Library</span>
+              <span class="text-[17px] font-medium">Interfacial stability of solid electrolytes (sample paper)</span>
+            </div>
+            <div class="flex shrink-0 gap-2">
+              <span class="rounded-md border border-brand px-3.5 py-1.5 text-[13px] text-brand">Paper Reading</span>
+              <span class="rounded-md border border-[#e0e4eb] px-3.5 py-1.5 text-[13px] text-muted">Note Editing</span>
+            </div>
+          </div>
+
+          <div class="grid gap-3.5 lg:grid-cols-[minmax(0,1fr)_320px]">
+            <div class="flex min-h-[300px] flex-col gap-2.5 rounded-md border border-[#e6eaf0] bg-[#fbfcfe] p-5 sm:p-6">
+              <div class="h-2 w-[62%] rounded-sm bg-[#e8ebf0]"></div>
+              <div class="mb-1.5 h-2 w-[40%] rounded-sm bg-[#edf0f4]"></div>
+              <div class="h-[7px] w-full rounded-sm bg-[#edf0f4]"></div>
+              <div class="h-[7px] w-[96%] rounded-sm bg-[#edf0f4]"></div>
+              <div class="h-[7px] w-[74%] rounded-sm bg-[#fff2c7]"></div>
+              <div class="h-[7px] w-[99%] rounded-sm bg-[#edf0f4]"></div>
+              <div class="my-2 flex gap-3">
+                <div class="flex h-24 w-[168px] shrink-0 items-center justify-center rounded border border-[#e2e7ee] bg-[#eef2f7]">
+                  <svg width="90" height="52" viewBox="0 0 90 52" fill="none" aria-hidden="true"><path d="M4 46 C 22 40, 34 22, 50 16 S 76 8, 86 6" stroke="#1890ff" stroke-width="1.6" fill="none"></path><path d="M4 48h82" stroke="#cbd3dd" stroke-width="1"></path></svg>
+                </div>
+                <div class="flex flex-grow flex-col justify-center gap-[7px]">
+                  <div class="h-1.5 w-[90%] rounded-sm bg-[#edf0f4]"></div>
+                  <div class="h-1.5 w-[80%] rounded-sm bg-[#edf0f4]"></div>
+                  <div class="h-1.5 w-[62%] rounded-sm bg-[#c8e4ff]"></div>
+                  <div class="h-1.5 w-[84%] rounded-sm bg-[#edf0f4]"></div>
+                </div>
+              </div>
+              <div class="h-[7px] w-[93%] rounded-sm bg-[#edf0f4]"></div>
+              <div class="h-[7px] w-[68%] rounded-sm bg-[#edf0f4]"></div>
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[13px] font-medium">Annotations &amp; notes</span>
+                <span class="text-xs text-faint">12 from the group</span>
+              </div>
+              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] bg-[#fffdf4] p-3.5">
+                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#ffd666]"></span><span class="text-xs text-muted">[Member A] · highlight</span></div>
+                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Their interfacial impedance is an order of magnitude off from last month's batch — worth raising at group meeting.</span>
+              </div>
+              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] p-3.5">
+                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#91caff]"></span><span class="text-xs text-muted">[Member B] · note</span></div>
+                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Added a companion paper to the "Interface characterisation" folder in our library.</span>
+              </div>
+              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] p-3.5">
+                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#b7eb8f]"></span><span class="text-xs text-muted">[Member C] · summary</span></div>
+                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Summary written up — I'm presenting this one on Oct 12.</span>
+              </div>
+              <div class="rounded-md border border-dashed border-[#d6dce5] p-3.5 text-[12.5px] text-[#9aa1ad]">Write an annotation…</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── modules ──────────────────────────────────────────── -->
+<section id="modules" class="bg-surface py-20 sm:py-24">
+  <div class="wrap">
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h2 class="text-[26px] font-bold sm:text-[30px]">Six modules, one research workflow</h2>
+      <p class="max-w-2xl text-[15px] leading-relaxed text-muted">Every module stands on its own. Together they run from reading the literature to publishing the result.</p>
+      <span class="mt-3 inline-flex items-center gap-2.5 rounded-full border border-line bg-white px-[18px] py-2.5 text-[13px] text-muted">
+        <svg class="h-[15px] w-[15px]" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h7v8H4zM13 8h7v8h-7z"></path><path d="M11 12h2"></path></svg>
+        Subscribe to one　or　bundle the whole workflow
+      </span>
+    </div>
+
+    <div class="mt-11 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <!-- 01 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 01</span><span class="badge-live">Available</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Groups &amp; Collaboration</h3><span class="font-display text-[12.5px] text-faint">The base layer</span></div>
+        <p class="text-sm leading-[1.85] text-muted">The base layer: a group's people, papers and discussion in one place.</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Create groups, invite members, assign roles</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Papers filed in folders and shared across the group</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Read online, with highlights and annotations visible to everyone</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Meeting notes, research plans, progress reports and conference tracking</span></li>
+        </ul>
+      </article>
+      <!-- 02 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 02</span><span class="badge-live">Available</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Reading Assistant</h3><span class="font-display text-[12.5px] text-faint">AI-assisted reading</span></div>
+        <p class="text-sm leading-[1.85] text-muted">Turns "finished one paper" into "got through a stack".</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Fast overview and key-point extraction</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Ask questions about the full text, answers anchored to the passage</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Compare several papers side by side</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Bilingual close reading with figures kept in place</span></li>
+        </ul>
+      </article>
+      <!-- 03 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 03</span><span class="badge-live">Available</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Literature &amp; Citations</h3><span class="font-display text-[12.5px] text-faint">Search &amp; referencing</span></div>
+        <p class="text-sm leading-[1.85] text-muted">Find it, cite it correctly, export it.</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Search literature across sources by topic</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Attach citations and references to a passage</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Verify every citation, so nothing is misattributed</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Export to EndNote / BibTeX / RIS</span></li>
+        </ul>
+      </article>
+      <!-- 04 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 04</span><span class="badge-live">Available</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Writing &amp; Submission</h3><span class="font-display text-[12.5px] text-faint">Draft to revision</span></div>
+        <p class="text-sm leading-[1.85] text-muted">One path from first draft to revision letter.</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Manuscript writing and language editing</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Submission-grade figures</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Pre-submission review — see the reviewer's questions early</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Point-by-point reviewer responses</span></li>
+        </ul>
+      </article>
+      <!-- 05 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 05</span><a href="#contact" class="badge-contact">Contact us</a></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Research Database</h3><span class="font-display text-[12.5px] text-faint">Structured group data</span></div>
+        <p class="text-sm leading-[1.85] text-muted">Turns scattered group data into a searchable, reusable asset.</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Literature, experimental records and results in one structured store</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Search by sample, batch, condition or metric</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[database module capabilities to be confirmed]</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[supported data sources and import paths to be confirmed]</span></li>
+        </ul>
+      </article>
+      <!-- 06 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 06</span><a href="#contact" class="badge-contact">Contact us</a></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">Analysis Pipelines</h3><span class="font-display text-[12.5px] text-faint">Reproducible analysis</span></div>
+        <p class="text-sm leading-[1.85] text-muted">Freezes the analysis you keep repeating into a reproducible pipeline.</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Common analysis steps captured as reusable pipelines</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Re-run the same data with new parameters and compare</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[pipeline module capabilities to be confirmed]</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[supported data types and methods to be confirmed]</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── collaboration detail ─────────────────────────────── -->
+<section id="collab" class="bg-surface pb-20 sm:pb-24">
+  <div class="wrap flex flex-col gap-6">
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[540px_minmax(0,1fr)]">
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5">
+        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">ANNOTATIONS</div>
+        <div class="flex flex-col gap-2.5">
+          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#ffd666] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"The synthesis temperature here contradicts our own results" — [Member A], p. 4</p>
+          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#91caff] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"Full characterisation conditions are in the SI" — [Member B], p. 11</p>
+          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#b7eb8f] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"This method transfers directly to our system" — [Member C], p. 7</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">Read the same paper, see each other's thinking</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">Highlights and annotations are shared across the group. Skimming what everyone marked beats re-reading the paper before a meeting — and what you argued about afterwards stays next to the text instead of sinking into a chat log.</p>
+      </div>
+    </div>
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[minmax(0,1fr)_540px]">
+      <div class="flex flex-col gap-4 lg:order-1">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">Not just papers — everything the group produces</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">Meeting notes, research plans, progress reports, reference links, figures — filed under the right group and folder. People graduate; the material stays with the group.</p>
+        <div class="flex flex-wrap gap-2 pt-1">
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">Meeting notes</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">Research plans</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">Progress reports</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">Equations &amp; code</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">Figures &amp; links</span>
+        </div>
+      </div>
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5 lg:order-2">
+        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">GROUP LIBRARY</div>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Interface characterisation <span class="text-xs text-[#9aa1ad]">18 papers</span></div>
+          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Synthesis routes <span class="text-xs text-[#9aa1ad]">24 papers</span></div>
+          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#8c93a0" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"></path><path d="M8 12h8M8 16h5"></path></svg>Spring 2026 meeting notes</div>
+          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#8c93a0" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"></path><path d="M8 12h8M8 16h5"></path></svg>Reading list for new students</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[540px_minmax(0,1fr)]">
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5">
+        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">CONFERENCES</div>
+        <div class="overflow-hidden rounded-md border border-[#e6eaf0] bg-white">
+          <table class="w-full text-left">
+            <thead><tr class="bg-[#f2f5f9] text-xs text-[#767d8a]"><th class="p-3 font-normal">Conference</th><th class="p-3 font-normal">Type</th><th class="p-3 font-normal">Status</th></tr></thead>
+            <tbody class="text-[12.5px]">
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference A]</td><td class="p-3 text-muted">Official</td><td class="p-3 text-brand">Open</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference B]</td><td class="p-3 text-muted">Official</td><td class="p-3 text-faint">Closed</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference C]</td><td class="p-3 text-muted">Non-official</td><td class="p-3 text-brand">Open</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">Track the venues your group cares about</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">Keep a list of the conferences and journals your group follows, marked official or non-official, with status and a link to the site. Join the public lists to see what your peers are watching.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── fields ───────────────────────────────────────────── -->
+<section id="fields" class="border-y border-line bg-white py-16 sm:py-[70px]">
+  <div class="wrap grid items-center gap-10 lg:grid-cols-[420px_minmax(0,1fr)] lg:gap-16">
+    <div class="flex flex-col gap-3.5">
+      <h2 class="text-[24px] font-bold leading-[1.5] sm:text-[27px]">Field-agnostic by design</h2>
+      <p class="text-[15px] leading-[1.9] text-muted">BettaFish holds no domain knowledge of its own — what it handles is how a group does research together.</p>
+    </div>
+    <div class="flex flex-wrap gap-2.5">
+      <span class="chip">Materials science</span><span class="chip">Chemistry</span><span class="chip">Life sciences</span><span class="chip">Physics</span>
+      <span class="chip">Engineering</span><span class="chip">Computer science &amp; AI</span><span class="chip">Medicine &amp; public health</span><span class="chip">Earth &amp; environmental science</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── pricing ──────────────────────────────────────────── -->
+<section id="pricing" class="bg-surface py-20 sm:py-24">
+  <div class="wrap">
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h2 class="text-[26px] font-bold sm:text-[30px]">Pricing</h2>
+      <p class="max-w-2xl text-[15px] leading-relaxed text-muted">Pricing below is for the collaboration base. AI modules are sold separately: <span class="text-ink">[per-module pricing TBC]</span>.</p>
+    </div>
+    <div class="mt-11 grid items-start gap-5 md:grid-cols-3">
+      <div class="card flex flex-col gap-4 p-8">
+        <h3 class="text-lg font-medium">Personal</h3>
+        <p class="text-sm text-muted">Ideal when trying BettaFish.</p>
+        <p class="font-display text-[40px] font-bold leading-none">Free</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>Unlimited trial time</li><li>One member per group</li><li>Private groups only</li></ul>
+        <a href="#contact" class="mt-2 rounded-md border border-brand py-3 text-center text-sm font-medium text-brand transition hover:bg-brand hover:text-white">Get started</a>
+      </div>
+      <div class="card relative flex flex-col gap-4 border-2 border-brand p-8">
+        <span class="absolute -top-3 right-6 rounded-full bg-[#52c41a] px-3 py-1 font-display text-[11px] tracking-wider text-white">BEST VALUE</span>
+        <h3 class="text-lg font-medium">Research Group</h3>
+        <p class="text-sm text-muted">Great for research groups of any size.</p>
+        <p class="flex items-baseline gap-1.5"><span class="font-display text-[40px] font-bold leading-none">$10</span><span class="text-sm text-muted">per member / month</span></p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>Unlimited private and public groups</li><li>Unlimited members per group</li><li>Shared annotations, notes and meeting material</li></ul>
+        <a href="#contact" class="btn-primary mt-2 w-full">Get started</a>
+      </div>
+      <div class="card flex flex-col gap-4 p-8">
+        <h3 class="text-lg font-medium">Customization</h3>
+        <p class="text-sm text-muted">For more private and secure options?</p>
+        <p class="font-display text-[34px] font-bold leading-none">Contact</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>Local deployment</li><li>Customized features</li><li>Worked out with our team</li></ul>
+        <a href="#contact" class="btn-ghost mt-2 w-full">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── contact ──────────────────────────────────────────── -->
+<section id="contact" class="border-t border-line bg-white py-20 sm:py-24">
+  <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_520px] lg:gap-20">
+    <div class="flex flex-col gap-4">
+      <h2 class="text-[26px] font-bold leading-[1.45] sm:text-[30px]">Start with the papers your group is reading this term</h2>
+      <p class="text-[15px] leading-[1.9] text-muted">The Personal plan is free — create a group and start. For module bundles or local deployment, drop us a line.</p>
+      <a href="https://bettafish.cc/" class="btn-primary mt-2 self-start">Go to BettaFish</a>
+    </div>
+
+    <form id="contactForm" class="card flex flex-col gap-4 p-7 sm:p-8" novalidate>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-name" class="text-[13px] font-medium">Name <span class="text-brand">*</span></label>
+        <input id="cf-name" name="name" type="text" required autocomplete="name" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-email" class="text-[13px] font-medium">Email <span class="text-brand">*</span></label>
+        <input id="cf-email" name="email" type="email" required autocomplete="email" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-org" class="text-[13px] font-medium">Organisation / group</label>
+        <input id="cf-org" name="organisation" type="text" autocomplete="organization" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-topic" class="text-[13px] font-medium">Interested in</label>
+        <select id="cf-topic" name="topic" class="rounded-md border border-line bg-white px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+          <option>Groups &amp; Collaboration (module 01)</option>
+          <option>Reading Assistant (module 02)</option>
+          <option>Literature &amp; Citations (module 03)</option>
+          <option>Writing &amp; Submission (module 04)</option>
+          <option>Research Database (module 05)</option>
+          <option>Analysis Pipelines (module 06)</option>
+          <option>Full bundle / local deployment</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-msg" class="text-[13px] font-medium">Message</label>
+        <textarea id="cf-msg" name="message" rows="3" class="resize-y rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20"></textarea>
+      </div>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+      <button type="submit" id="cfSubmit" class="btn-primary mt-1 w-full">Send</button>
+      <p id="cfStatus" role="status" aria-live="polite" class="hidden text-[13px]"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ── footer ───────────────────────────────────────────── -->
+<footer class="bg-footer py-12 text-[#e6e9ef]">
+  <div class="wrap flex flex-col justify-between gap-10 sm:flex-row">
+    <div class="flex flex-col gap-2.5">
+      <span class="font-display text-[17px] font-bold">BettaFish</span>
+      <span class="text-[13px] text-[#6e7684]">bettafish.site</span>
+    </div>
+    <div class="grid grid-cols-2 gap-8 text-[13px] text-[#99a1af] sm:flex sm:gap-14">
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">Product</span><a href="#modules" class="hover:text-white">Modules</a><a href="#collab" class="hover:text-white">Collaboration</a><a href="#pricing" class="hover:text-white">Pricing</a></div>
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">Resources</span><a href="https://bettafish.cc/" class="hover:text-white">Sign in</a><a href="#contact" class="hover:text-white">Contact us</a></div>
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">Language</span><span class="text-white">English</span><a href="/" hreflang="zh-CN" class="hover:text-white">中文</a></div>
+    </div>
+  </div>
+  <div class="wrap mt-9 border-t border-[#1e232c] pt-5 text-xs text-[#5a606b]">
+    © <span id="year">2026</span> [legal entity placeholder]
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

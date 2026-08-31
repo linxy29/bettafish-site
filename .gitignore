@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# 设计画布是 ~2MB 的生成文件，可从 design/*.dc.html 重新生成
+design/bettafish-homepage-directions.html

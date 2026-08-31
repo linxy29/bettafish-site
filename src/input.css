@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-white text-ink font-sans antialiased;
+  }
+  h1, h2, h3 {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-page px-5 sm:px-8 lg:px-16;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand px-7 py-3.5
+           text-[15px] font-medium text-white transition hover:bg-brand-dark
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-brand;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-md border border-[#d6dbe3] bg-white
+           px-6 py-3.5 text-[15px] text-[#2e3440] transition hover:border-brand hover:text-brand;
+  }
+  .badge-live {
+    @apply inline-flex items-center rounded-[10px] border border-ok-line bg-ok-soft
+           px-2.5 py-1 font-display text-[11px] text-ok;
+  }
+  .badge-contact {
+    @apply inline-flex items-center rounded-[10px] border border-brand bg-white
+           px-3 py-1 font-display text-[11px] font-medium text-brand
+           transition hover:bg-brand hover:text-white;
+  }
+  .card {
+    @apply rounded-xl border border-line bg-white;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-[#e0e4eb]
+           px-5 py-2.5 text-sm text-[#2e3440];
+  }
+  .eyebrow {
+    @apply font-display text-xs tracking-[0.1em] text-brand;
+  }
+}

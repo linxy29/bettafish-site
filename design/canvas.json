@@ -1,0 +1,40 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "首页 · 中文" },
+    { "id": "page-2", "name": "Homepage · EN" },
+    { "id": "page-3", "name": "备选草图 A / B" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html", "title": "BettaFish 首页 · 中文 1440", "page": "page-1", "x": 0, "y": 0, "w": 1440, "h": 5100 },
+    { "file": "MainEN.dc.html", "title": "BettaFish Homepage · EN 1440", "page": "page-2", "x": 0, "y": 0, "w": 1440, "h": 5300 },
+    { "file": "DirectionA.dc.html", "title": "备选 A · 科研数据感（未采用）", "page": "page-3", "x": 0, "y": 0, "w": 1440, "h": 2800 },
+    { "file": "DirectionB.dc.html", "title": "备选 B · 企业可信感（未采用）", "page": "page-3", "x": 1600, "y": 0, "w": 1440, "h": 3520 }
+  ],
+  "annotations": [
+    {
+      "id": "note-todo-zh",
+      "page": "page-1",
+      "x": 0,
+      "y": -460,
+      "w": 660,
+      "text": "定位：科研协作平台（co-research）。六个模块可单独订阅，也可打包。\n\n需要你补的内容：\n· 模块 05 科研数据库、模块 06 AI 分析流程——卡片里两条 [待补充] 是具体能力和支持范围，我没替你编。\n· 各模块单价（价格区现在写的是 [各模块单价待定]）。\n· 联系邮箱、公司全称、ICP 备案号。\n\n已核实为真实信息（取自 betta-fish-ops.github.io 线上代码）：模块 01 的全部功能、三档价格（免费 / $10 每人每月 / 定制含本地部署）、邀请制、品牌色 #1890ff、Ant Design 深色侧栏 #001529。\n\n产品界面为示意，非真实截图。"
+    },
+    {
+      "id": "note-todo-en",
+      "page": "page-2",
+      "x": 0,
+      "y": -380,
+      "w": 660,
+      "text": "English homepage, structurally mirrors the Chinese one — same six modules, same pricing, same product frame.\n\nSame gaps to fill: module 05 / 06 capability bullets, per-module pricing, contact email, legal entity.\n\nModule 01 wording is lifted from the live app's own copy (Research Groups & Collaborations, Organize Papers, Share Knowledge, Read & Review Papers, Review Annotations & Highlights, Share Notes & Summaries)."
+    },
+    {
+      "id": "note-alts",
+      "page": "page-3",
+      "x": 0,
+      "y": -300,
+      "w": 620,
+      "text": "这两版没有采用，留档备查。\nA 科研数据感：深色 + 数据图形，技术权威感最强，但偏工具感。\nB 企业可信感：浅色宋体 + 案例与合规。以后做「面向企业 / 定制版」落地页时，案例段和合规段可以直接复用。\n\n注意：这两版的文案是早期基于错误产品假设写的（材料化学 AI 研发平台），只看视觉，别用文案。"
+    }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}

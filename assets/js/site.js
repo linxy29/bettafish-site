@@ -5,7 +5,7 @@
  *    在替换之前，表单会自动降级成打开邮件客户端（mailto），不会静默失败。
  */
 const FORM_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_FORM_ID'
-const CONTACT_EMAIL = 'hello@bettafish.site' // ⚠️ 换成真实收件邮箱
+const CONTACT_EMAIL = 'hyperturbedd@outlook.com'
 
 const isEN = document.documentElement.lang.startsWith('en')
 const t = (zh, en) => (isEN ? en : zh)

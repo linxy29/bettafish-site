@@ -14,7 +14,8 @@
 <meta property="og:description" content="From reading papers together to doing research together. Six modules, on their own or bundled into a full research workflow.">
 <meta property="og:url" content="https://bettafish.site/en/">
 <meta property="og:locale" content="en">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/logo.png" type="image/png">
+<meta property="og:image" content="https://bettafish.site/assets/img/logo-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
@@ -27,9 +28,7 @@
   <div class="wrap flex h-[68px] items-center justify-between gap-6">
     <div class="flex items-center gap-8">
       <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="BettaFish home">
-        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M3 12c4-6 11-7 15-3-4 4-11 5-15 3z"></path><path d="M18 9l3-3v12l-3-3"></path><circle cx="8" cy="11" r="1"></circle>
-        </svg>
+        <img src="/assets/img/logo.png" alt="BettaFish logo" width="26" height="26" class="h-[26px] w-[26px]">
         <span class="font-display text-xl font-bold">BettaFish</span>
       </a>
       <nav class="hidden items-center gap-7 text-sm text-[#4c525c] lg:flex" aria-label="Main navigation">
@@ -90,78 +89,8 @@
         <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
         <span class="ml-3 truncate font-display text-xs text-faint">bettafish.site — paper reading mode (illustrative UI, sample data)</span>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-[200px_minmax(0,1fr)]">
-        <aside class="hidden flex-col gap-1 bg-navy p-4 md:flex">
-          <div class="flex items-center gap-2 px-2.5 pb-4 pt-1.5">
-            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12c4-6 11-7 15-3-4 4-11 5-15 3z"></path><path d="M18 9l3-3v12l-3-3"></path></svg>
-            <span class="font-display text-[15px] font-bold text-white">BettaFish</span>
-          </div>
-          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Dashboard</span>
-          <span class="rounded bg-brand px-2.5 py-2.5 text-[13px] text-white">Groups</span>
-          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Conferences</span>
-          <span class="rounded px-2.5 py-2.5 text-[13px] text-[#a7b1bf]">Profile</span>
-          <div class="mt-auto border-t border-[#12293d] pt-3">
-            <span class="font-display text-[11px] text-[#5c6875]">Sample group · 6 members</span>
-          </div>
-        </aside>
-
-        <div class="flex flex-col gap-3.5 p-5 sm:p-6">
-          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-faint">Groups ／ [Sample Group] ／ Library</span>
-              <span class="text-[17px] font-medium">Interfacial stability of solid electrolytes (sample paper)</span>
-            </div>
-            <div class="flex shrink-0 gap-2">
-              <span class="rounded-md border border-brand px-3.5 py-1.5 text-[13px] text-brand">Paper Reading</span>
-              <span class="rounded-md border border-[#e0e4eb] px-3.5 py-1.5 text-[13px] text-muted">Note Editing</span>
-            </div>
-          </div>
-
-          <div class="grid gap-3.5 lg:grid-cols-[minmax(0,1fr)_320px]">
-            <div class="flex min-h-[300px] flex-col gap-2.5 rounded-md border border-[#e6eaf0] bg-[#fbfcfe] p-5 sm:p-6">
-              <div class="h-2 w-[62%] rounded-sm bg-[#e8ebf0]"></div>
-              <div class="mb-1.5 h-2 w-[40%] rounded-sm bg-[#edf0f4]"></div>
-              <div class="h-[7px] w-full rounded-sm bg-[#edf0f4]"></div>
-              <div class="h-[7px] w-[96%] rounded-sm bg-[#edf0f4]"></div>
-              <div class="h-[7px] w-[74%] rounded-sm bg-[#fff2c7]"></div>
-              <div class="h-[7px] w-[99%] rounded-sm bg-[#edf0f4]"></div>
-              <div class="my-2 flex gap-3">
-                <div class="flex h-24 w-[168px] shrink-0 items-center justify-center rounded border border-[#e2e7ee] bg-[#eef2f7]">
-                  <svg width="90" height="52" viewBox="0 0 90 52" fill="none" aria-hidden="true"><path d="M4 46 C 22 40, 34 22, 50 16 S 76 8, 86 6" stroke="#1890ff" stroke-width="1.6" fill="none"></path><path d="M4 48h82" stroke="#cbd3dd" stroke-width="1"></path></svg>
-                </div>
-                <div class="flex flex-grow flex-col justify-center gap-[7px]">
-                  <div class="h-1.5 w-[90%] rounded-sm bg-[#edf0f4]"></div>
-                  <div class="h-1.5 w-[80%] rounded-sm bg-[#edf0f4]"></div>
-                  <div class="h-1.5 w-[62%] rounded-sm bg-[#c8e4ff]"></div>
-                  <div class="h-1.5 w-[84%] rounded-sm bg-[#edf0f4]"></div>
-                </div>
-              </div>
-              <div class="h-[7px] w-[93%] rounded-sm bg-[#edf0f4]"></div>
-              <div class="h-[7px] w-[68%] rounded-sm bg-[#edf0f4]"></div>
-            </div>
-
-            <div class="flex flex-col gap-2.5">
-              <div class="flex items-center justify-between">
-                <span class="text-[13px] font-medium">Annotations &amp; notes</span>
-                <span class="text-xs text-faint">12 from the group</span>
-              </div>
-              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] bg-[#fffdf4] p-3.5">
-                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#ffd666]"></span><span class="text-xs text-muted">[Member A] · highlight</span></div>
-                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Their interfacial impedance is an order of magnitude off from last month's batch — worth raising at group meeting.</span>
-              </div>
-              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] p-3.5">
-                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#91caff]"></span><span class="text-xs text-muted">[Member B] · note</span></div>
-                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Added a companion paper to the "Interface characterisation" folder in our library.</span>
-              </div>
-              <div class="flex flex-col gap-2 rounded-md border border-[#e6eaf0] p-3.5">
-                <div class="flex items-center gap-2"><span class="block h-5 w-5 rounded-full bg-[#b7eb8f]"></span><span class="text-xs text-muted">[Member C] · summary</span></div>
-                <span class="text-[12.5px] leading-[1.7] text-[#2e3440]">Summary written up — I'm presenting this one on Oct 12.</span>
-              </div>
-              <div class="rounded-md border border-dashed border-[#d6dce5] p-3.5 text-[12.5px] text-[#9aa1ad]">Write an annotation…</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="/assets/img/paper-reading.png" alt="Paper reading mode in BettaFish — a shared paper with the group's highlights"
+           width="1416" height="900" class="block w-full" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -238,9 +167,9 @@
         <p class="text-sm leading-[1.85] text-muted">Turns scattered group data into a searchable, reusable asset.</p>
         <div class="h-px bg-[#eef1f5]"></div>
         <ul class="flex flex-col gap-2.5">
-          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Literature, experimental records and results in one structured store</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Collects data automatically and normalises it into one format</span></li>
           <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Search by sample, batch, condition or metric</span></li>
-          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[database module capabilities to be confirmed]</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Literature, experimental records and results in one structured store</span></li>
           <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[supported data sources and import paths to be confirmed]</span></li>
         </ul>
       </article>
@@ -253,7 +182,7 @@
         <ul class="flex flex-col gap-2.5">
           <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Common analysis steps captured as reusable pipelines</span></li>
           <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Re-run the same data with new parameters and compare</span></li>
-          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[pipeline module capabilities to be confirmed]</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">Returns a first-pass conclusion with the literature behind it</span></li>
           <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#cbd3dd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">[supported data types and methods to be confirmed]</span></li>
         </ul>
       </article>
@@ -267,12 +196,8 @@
 
     <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[540px_minmax(0,1fr)]">
       <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5">
-        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">ANNOTATIONS</div>
-        <div class="flex flex-col gap-2.5">
-          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#ffd666] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"The synthesis temperature here contradicts our own results" — [Member A], p. 4</p>
-          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#91caff] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"Full characterisation conditions are in the SI" — [Member B], p. 11</p>
-          <p class="rounded-md border border-[#e6eaf0] border-l-[3px] border-l-[#b7eb8f] bg-white p-3 text-[12.5px] leading-[1.7] text-[#2e3440]">"This method transfers directly to our system" — [Member C], p. 7</p>
-        </div>
+        <img src="/assets/img/annotations.png" alt="The group's annotations beside the paper"
+             width="1416" height="900" class="block w-full rounded-md border border-[#e6eaf0]" loading="lazy">
       </div>
       <div class="flex flex-col gap-4">
         <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">Read the same paper, see each other's thinking</h3>
@@ -293,13 +218,8 @@
         </div>
       </div>
       <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5 lg:order-2">
-        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">GROUP LIBRARY</div>
-        <div class="flex flex-col gap-2">
-          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Interface characterisation <span class="text-xs text-[#9aa1ad]">18 papers</span></div>
-          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 7h6l2 2h10v10H3z"></path></svg>Synthesis routes <span class="text-xs text-[#9aa1ad]">24 papers</span></div>
-          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#8c93a0" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"></path><path d="M8 12h8M8 16h5"></path></svg>Spring 2026 meeting notes</div>
-          <div class="flex items-center gap-2.5 rounded-md border border-[#e6eaf0] bg-white p-3 text-[13px] text-[#2e3440]"><svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#8c93a0" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h9l5 5v11H5z"></path><path d="M8 12h8M8 16h5"></path></svg>Reading list for new students</div>
-        </div>
+        <img src="/assets/img/group-knowledge.png" alt="A group's knowledge base: meeting notes, plans and links"
+             width="1416" height="900" class="block w-full rounded-md border border-[#e6eaf0]" loading="lazy">
       </div>
     </div>
 
@@ -310,12 +230,14 @@
           <table class="w-full text-left">
             <thead><tr class="bg-[#f2f5f9] text-xs text-[#767d8a]"><th class="p-3 font-normal">Conference</th><th class="p-3 font-normal">Type</th><th class="p-3 font-normal">Status</th></tr></thead>
             <tbody class="text-[12.5px]">
-              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference A]</td><td class="p-3 text-muted">Official</td><td class="p-3 text-brand">Open</td></tr>
-              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference B]</td><td class="p-3 text-muted">Official</td><td class="p-3 text-faint">Closed</td></tr>
-              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">[Sample conference C]</td><td class="p-3 text-muted">Non-official</td><td class="p-3 text-brand">Open</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">MRS Fall Meeting<span class="block text-[11px] text-faint">Materials Research Society</span></td><td class="p-3 text-muted">Official</td><td class="p-3 text-brand">Open</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">ACS Spring<span class="block text-[11px] text-faint">American Chemical Society</span></td><td class="p-3 text-muted">Official</td><td class="p-3 text-brand">Open</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">E-MRS Spring Meeting<span class="block text-[11px] text-faint">European Materials Research Society</span></td><td class="p-3 text-muted">Official</td><td class="p-3 text-faint">Closed</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">ICMAT<span class="block text-[11px] text-faint">Adv. Materials for Advanced Technologies, Singapore</span></td><td class="p-3 text-muted">Official</td><td class="p-3 text-brand">Open</td></tr>
             </tbody>
           </table>
         </div>
+        <p class="mt-3 text-[11.5px] leading-relaxed text-faint">Real conferences; the call-for-papers status shown is illustrative — check each venue's own site.</p>
       </div>
       <div class="flex flex-col gap-4">
         <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">Track the venues your group cares about</h3>
@@ -429,7 +351,7 @@
 <footer class="bg-footer py-12 text-[#e6e9ef]">
   <div class="wrap flex flex-col justify-between gap-10 sm:flex-row">
     <div class="flex flex-col gap-2.5">
-      <span class="font-display text-[17px] font-bold">BettaFish</span>
+      <span class="flex items-center gap-2.5 font-display text-[17px] font-bold"><img src="/assets/img/logo-white.png" alt="" width="22" height="22" class="h-[22px] w-[22px]">BettaFish</span>
       <span class="text-[13px] text-[#6e7684]">bettafish.site</span>
     </div>
     <div class="grid grid-cols-2 gap-8 text-[13px] text-[#99a1af] sm:flex sm:gap-14">

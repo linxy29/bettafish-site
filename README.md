@@ -30,7 +30,6 @@ npm run serve   # 另开一个终端，http://localhost:4173
 | `assets/js/site.js` | `FORM_ENDPOINT` — 换成 Formspree／Tally 的真实端点。未替换时表单自动降级为 `mailto:`，不会静默失败 |
 | `assets/js/site.js` | `CONTACT_EMAIL` — 换成真实收件邮箱 |
 | 两个 `index.html` | `[各模块单价待定]` / `[per-module pricing TBC]` |
-| 两个 `index.html` | 模块 05、06 里 `[…待补充]` / `[…to be confirmed]` 四条要点 |
 | 两个 `index.html` | 页脚 `[公司全称占位]`、`[ICP 备案号占位]` / `[legal entity placeholder]` |
 | 产品截图 | 三张截图取自线上产品，界面中出现了用户名 `tangdayu` 与头像（原本就公开在产品站上）。若不想露出，需要重新截图 |
 | 会议表格 | 会议名称为真实会议，征稿状态是示意值，需要定期更新或改成动态数据 |
@@ -38,6 +37,10 @@ npm run serve   # 另开一个终端，http://localhost:4173
 ## 图片资源
 
 `assets/img/` 下的 logo 与产品截图直接取自线上产品：
+
+`assets/img/affiliations/` 下是「这些机构的研究者在用」一段的 13 个机构 logo，
+顺序与线上产品 welcome 页一致：NTU、NUS、SMU、SZU、SUST、TJU、HKPU、ECNU、
+UCAS、UNSW、Continental、NKU、NJU。
 
 ```
 https://betta-fish-ops.github.io/static/media/fish-1k.719c40fe6a91b54a6550.png              logo.png

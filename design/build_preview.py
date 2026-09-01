@@ -13,6 +13,17 @@ PAGES = [
     ('DirectionB.dc.html', 'alt-b.html',   '备选 B · 企业可信感（未采用）'),
 ]
 
+STALE_BANNER = '''<div style="background:#fff4e5;border-bottom:2px solid #f0a020;padding:14px 48px;
+     font:14px/1.7 -apple-system,'Noto Sans SC',sans-serif;color:#5c3d00;">
+  <strong>⚠️ 这是早期设计草稿，已经落后于真实站点。</strong>
+  真站点已换成产品真实 logo、真实界面截图，并加了「这些机构的研究者在用」13 个机构 logo。
+  以真站点为准：<code style="background:#fff;padding:2px 6px;border-radius:3px;">
+  cd ~/Documents/Code/bettafish-site &amp;&amp; npm run serve</code>
+  然后打开 <a href="http://localhost:4173/" style="color:#b45309;">http://localhost:4173/</a>
+  （英文 <a href="http://localhost:4173/en/" style="color:#b45309;">/en/</a>）。
+</div>
+'''
+
 NAV = ('<a href="index.html">← 目录</a>'
        '<a href="main.html">中文首页</a>'
        '<a href="main-en.html">English</a>'
@@ -41,7 +52,7 @@ for src, dst, title in PAGES:
 </style>
 </head>
 <body>
-<div class="bf-bar"><strong>{title}</strong>{NAV}</div>
+{STALE_BANNER}<div class="bf-bar"><strong>{title}</strong>{NAV}</div>
 {body}
 </body>
 </html>""", encoding='utf-8')
@@ -84,7 +95,7 @@ for src, dst, title in PAGES:
 </style>
 </head>
 <body>
-<header>
+""" + STALE_BANNER + """<header>
   <h1>BettaFish 官网设计稿</h1>
   <p>定位：科研协作平台（co-research）。六个模块可单独订阅，也可打包成整条工作流。模块 01 的功能与三档价格取自线上产品代码，属实；模块 05／06 的具体能力和各模块单价还需你补。产品界面为示意，非真实截图。</p>
 </header>

@@ -1,10 +1,8 @@
 /* BettaFish site — bettafish.site
  *
- * ⚠️ 上线前必须替换：把 FORM_ENDPOINT 换成你的 Formspree / Tally 表单端点。
- *    在 https://formspree.io 建表单后会拿到形如 https://formspree.io/f/abcdwxyz 的地址。
- *    在替换之前，表单会自动降级成打开邮件客户端（mailto），不会静默失败。
+ * 联系表单走 Formspree；若端点不可用会自动降级成 mailto，不会静默失败。
  */
-const FORM_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_FORM_ID'
+const FORM_ENDPOINT = 'https://formspree.io/f/xqpkqzly'
 const CONTACT_EMAIL = 'hyperturbedd@outlook.com'
 
 const isEN = document.documentElement.lang.startsWith('en')
@@ -53,7 +51,7 @@ if (form && status && submit) {
     status.classList.add(ok ? 'text-ok' : 'text-[#c6533e]')
   }
 
-  const mailtoFallback = (data) => {
+  const mailtoFallback = (data, note) => {
     const subject = t('BettaFish 咨询', 'BettaFish enquiry') + ' — ' + (data.get('topic') || '')
     const body = [
       t('称呼', 'Name') + ': ' + (data.get('name') || ''),
@@ -65,7 +63,7 @@ if (form && status && submit) {
     ].join('\n')
     window.location.href =
       `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-    say(t('已为你打开邮件客户端，请点击发送。', 'Your mail client is open — press send to finish.'), true)
+    say(note || t('已为你打开邮件客户端，请点击发送。', 'Your mail client is open — press send to finish.'), true)
   }
 
   form.addEventListener('submit', async (e) => {
@@ -74,11 +72,6 @@ if (form && status && submit) {
 
     const data = new FormData(form)
     if (data.get('_gotcha')) return // honeypot: silently drop bots
-
-    if (FORM_ENDPOINT.includes('REPLACE_WITH')) {
-      mailtoFallback(data)
-      return
-    }
 
     submit.disabled = true
     submit.classList.add('opacity-60')
@@ -94,9 +87,10 @@ if (form && status && submit) {
       form.reset()
       say(t('已收到，我们会尽快回复你。', "Got it — we'll get back to you shortly."), true)
     } catch {
-      say(
-        t(`发送失败，请直接写信到 ${CONTACT_EMAIL}。`, `Could not send — please email ${CONTACT_EMAIL} directly.`),
-        false
+      mailtoFallback(
+        data,
+        t('发送失败，已为你打开邮件客户端，请点击发送。',
+          'Could not send — your mail client is open, press send to finish.')
       )
     } finally {
       submit.disabled = false

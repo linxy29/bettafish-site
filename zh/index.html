@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BettaFish · 科研协作平台</title>
+<meta name="description" content="BettaFish 把课题组的协作、文献、写作、数据与分析放在同一个平台上。六个模块可以单独订阅，也可以打包成一整条科研工作流。">
+<link rel="canonical" href="https://bettafish.site/zh/">
+<link rel="alternate" hreflang="zh-CN" href="https://bettafish.site/zh/">
+<link rel="alternate" hreflang="en" href="https://bettafish.site/">
+<link rel="alternate" hreflang="x-default" href="https://bettafish.site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BettaFish · 科研协作平台">
+<meta property="og:description" content="从一起读文献，到一起做研究。六个模块可以单独订阅，也可以打包成一整条科研工作流。">
+<meta property="og:url" content="https://bettafish.site/zh/">
+<meta property="og:locale" content="zh_CN">
+<link rel="icon" href="/assets/img/logo.png" type="image/png">
+<meta property="og:image" content="https://bettafish.site/assets/img/logo-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+</head>
+<body>
+
+<!-- ── header ───────────────────────────────────────────── -->
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+  <div class="wrap flex h-[68px] items-center justify-between gap-6">
+    <div class="flex items-center gap-8">
+      <a href="/zh/" class="flex shrink-0 items-center gap-2.5" aria-label="BettaFish 首页">
+        <img src="/assets/img/logo.png" alt="BettaFish logo" width="26" height="26" class="h-[26px] w-[26px]">
+        <span class="font-display text-xl font-bold">BettaFish</span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm text-[#4c525c] lg:flex" aria-label="主导航">
+        <a href="#modules" class="transition hover:text-brand">模块</a>
+        <a href="#collab" class="transition hover:text-brand">协作</a>
+        <a href="#fields" class="transition hover:text-brand">适用学科</a>
+        <a href="#pricing" class="transition hover:text-brand">价格</a>
+      </nav>
+    </div>
+    <div class="hidden items-center gap-5 text-sm lg:flex">
+      <a href="/" hreflang="en" class="text-[#6a707a] transition hover:text-brand">EN</a>
+      <a href="https://bettafish.cc/" class="text-[#4c525c] transition hover:text-brand">登录</a>
+      <a href="#contact" class="rounded-md bg-brand px-5 py-2.5 font-medium text-white transition hover:bg-brand-dark">免费开始使用</a>
+    </div>
+    <button type="button" id="navToggle" class="-mr-2 inline-flex h-10 w-10 items-center justify-center rounded-md text-ink lg:hidden" aria-expanded="false" aria-controls="mobileNav" aria-label="打开菜单">
+      <svg id="navIconOpen" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      <svg id="navIconClose" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </button>
+  </div>
+  <nav id="mobileNav" hidden class="border-t border-line bg-white lg:hidden" aria-label="移动端导航">
+    <div class="wrap flex flex-col gap-1 py-4 text-[15px]">
+      <a href="#modules" class="rounded-md px-2 py-3 hover:bg-surface">模块</a>
+      <a href="#collab" class="rounded-md px-2 py-3 hover:bg-surface">协作</a>
+      <a href="#fields" class="rounded-md px-2 py-3 hover:bg-surface">适用学科</a>
+      <a href="#pricing" class="rounded-md px-2 py-3 hover:bg-surface">价格</a>
+      <a href="https://bettafish.cc/" class="rounded-md px-2 py-3 hover:bg-surface">登录</a>
+      <a href="/" hreflang="en" class="rounded-md px-2 py-3 hover:bg-surface">English</a>
+      <a href="#contact" class="btn-primary mt-2">免费开始使用</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ── hero ─────────────────────────────────────────────── -->
+<section class="bg-white pt-16 sm:pt-20">
+  <div class="wrap flex flex-col items-center gap-6 text-center">
+    <span class="eyebrow rounded-full bg-brand-soft px-4 py-1.5 tracking-[0.08em]">CO-RESEARCH PLATFORM · 科研协作平台</span>
+    <h1 class="max-w-4xl text-[34px] font-bold leading-[1.3] tracking-tight sm:text-[42px] lg:text-[48px]">
+      从一起读文献，<br class="hidden sm:block">到一起做研究
+    </h1>
+    <p class="max-w-2xl text-base leading-[1.9] text-muted sm:text-[17px]">
+      BettaFish 把课题组的协作、文献、写作、数据与分析放在同一个平台上。六个模块可以单独订阅，也可以打包成一整条科研工作流。
+    </p>
+    <div class="flex flex-col items-stretch gap-3.5 pt-1 sm:flex-row sm:items-center">
+      <a href="#contact" class="btn-primary">免费开始使用</a>
+      <a href="#modules" class="btn-ghost">看六个模块 <span aria-hidden="true">▸</span></a>
+    </div>
+    <p class="text-[13px] text-faint">个人版永久免费，无试用期限</p>
+  </div>
+
+  <!-- product frame -->
+  <div class="wrap mt-12 sm:mt-14">
+    <div class="mx-auto max-w-[1180px] overflow-hidden rounded-t-xl border border-[#dde2ea] bg-white shadow-frame">
+      <div class="flex items-center gap-2 border-b border-[#e6eaf0] bg-[#f7f8fb] px-4 py-3">
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="block h-2.5 w-2.5 rounded-full bg-[#dce0e8]"></span>
+        <span class="ml-3 truncate font-display text-xs text-faint">bettafish.site — 论文阅读模式（界面为示意，非真实数据）</span>
+      </div>
+      <img src="/assets/img/paper-reading.png" alt="BettaFish 论文阅读模式：一篇组内共享的论文和大家的高亮"
+           width="1416" height="900" class="block w-full" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- ── used by ──────────────────────────────────────────── -->
+<section class="border-y border-line bg-white py-12 sm:py-14">
+  <div class="wrap flex flex-col items-center gap-8">
+    <h2 class="text-center text-[15px] font-medium tracking-wide text-faint">这些机构的研究者在用</h2>
+    <ul class="flex flex-wrap items-center justify-center gap-x-9 gap-y-7 sm:gap-x-12">
+      <li><img src="/assets/img/affiliations/ntu.png" alt="NTU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/nus.jpg" alt="NUS" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/smu.png" alt="SMU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/szu.jpg" alt="SZU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/sust.png" alt="SUST" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/tju.jpg" alt="TJU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/hkpu.png" alt="HKPU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/ecnu.png" alt="ECNU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/ucas.png" alt="UCAS" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/unsw.png" alt="UNSW" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/conti.png" alt="Continental" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/nku.png" alt="NKU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+      <li><img src="/assets/img/affiliations/nju.png" alt="NJU" height="44"
+               class="h-9 w-auto opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0 sm:h-11" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── modules ──────────────────────────────────────────── -->
+<section id="modules" class="bg-surface py-20 sm:py-24">
+  <div class="wrap">
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h2 class="text-[26px] font-bold sm:text-[30px]">六个模块，一条科研工作流</h2>
+      <p class="max-w-2xl text-[15px] leading-relaxed text-muted">每个模块都能单独订阅、单独用起来；合在一起就是从读文献到出成果的完整链路。</p>
+      <span class="mt-3 inline-flex items-center gap-2.5 rounded-full border border-line bg-white px-[18px] py-2.5 text-[13px] text-muted">
+        <svg class="h-[15px] w-[15px]" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h7v8H4zM13 8h7v8h-7z"></path><path d="M11 12h2"></path></svg>
+        单独订阅　或　打包成整条工作流
+      </span>
+    </div>
+
+    <div class="mt-11 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <!-- 01 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 01</span><span class="badge-live">已上线</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">科研组协作</h3><span class="font-display text-[12.5px] text-faint">Groups &amp; Collaboration</span></div>
+        <p class="text-sm leading-[1.85] text-muted">平台的底座：一个组的人、论文和讨论都在这里。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">建组、邀请成员并分配角色</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">论文按目录归档，全组共享</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">在线阅读，高亮与批注全组可见</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">组会笔记、研究计划、进展报告与会议追踪</span></li>
+        </ul>
+      </article>
+      <!-- 02 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 02</span><span class="badge-live">已上线</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">文献阅读助手</h3><span class="font-display text-[12.5px] text-faint">Reading Assistant</span></div>
+        <p class="text-sm leading-[1.85] text-muted">把「读完一篇」变成「读透一批」。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">论文速览与重点提取</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">针对全文提问，答案定位到原文段落</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">多篇论文横向对比</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">中英对照精读，图表位置保留</span></li>
+        </ul>
+      </article>
+      <!-- 03 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 03</span><span class="badge-live">已上线</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">文献检索与引用</h3><span class="font-display text-[12.5px] text-faint">Literature &amp; Citations</span></div>
+        <p class="text-sm leading-[1.85] text-muted">找得到、引得对、导得出。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">按主题跨库检索文献</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">给段落自动配引用与参考文献</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">引文逐条核对，避免张冠李戴</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">导出 EndNote / BibTeX / RIS</span></li>
+        </ul>
+      </article>
+      <!-- 04 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 04</span><span class="badge-live">已上线</span></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">写作与投稿</h3><span class="font-display text-[12.5px] text-faint">Writing &amp; Submission</span></div>
+        <p class="text-sm leading-[1.85] text-muted">从初稿到返修，一条链路走完。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">论文写作与语言润色</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">投稿级图表生成</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">投稿前自审，提前看到审稿人会问什么</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">审稿意见逐条回复</span></li>
+        </ul>
+      </article>
+      <!-- 05 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 05</span><a href="#contact" class="badge-contact">联系我们</a></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">科研数据库</h3><span class="font-display text-[12.5px] text-faint">Research Database</span></div>
+        <p class="text-sm leading-[1.85] text-muted">把组里散落的数据变成能查、能复用的结构化资产。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">自动搜集数据，统一整理成规范格式</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">按样品、批次、条件与指标检索</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">文献、实验记录与结果统一结构化存储</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#9aa1ad" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">新功能持续开发中</span></li>
+        </ul>
+      </article>
+      <!-- 06 -->
+      <article class="card flex flex-col gap-3.5 p-7">
+        <div class="flex items-center justify-between"><span class="eyebrow">MODULE 06</span><a href="#contact" class="badge-contact">联系我们</a></div>
+        <div class="flex flex-col gap-1"><h3 class="text-[19px] font-bold">AI 分析流程</h3><span class="font-display text-[12.5px] text-faint">Analysis Pipelines</span></div>
+        <p class="text-sm leading-[1.85] text-muted">把反复要做的分析固化成可复现的流程。</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">常用分析步骤沉淀为可复用流程</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">同一份数据换参数重跑，结果可比对</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#1890ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#4c525c]">给出初步结论，并附上支撑它的文献</span></li>
+          <li class="flex gap-2.5"><svg class="mt-1 h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#9aa1ad" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="text-[13.5px] leading-[1.75] text-[#9aa1ad]">新功能持续开发中</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── collaboration detail ─────────────────────────────── -->
+<section id="collab" class="bg-surface pb-20 sm:pb-24">
+  <div class="wrap flex flex-col gap-6">
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[540px_minmax(0,1fr)]">
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5">
+        <img src="/assets/img/annotations.png" alt="论文旁边就是全组的批注"
+             width="1416" height="900" class="block w-full rounded-md border border-[#e6eaf0]" loading="lazy">
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">读同一篇论文，看得见彼此的想法</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">高亮和批注是全组共享的。组会前翻一遍别人划的重点，比重新读一遍论文快得多；组会后争论过的点也留在原文旁边，不会随着聊天记录一起沉底。</p>
+      </div>
+    </div>
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[minmax(0,1fr)_540px]">
+      <div class="flex flex-col gap-4 lg:order-1">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">不只是论文，组里的东西都放得进来</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">组会笔记、研究计划、进展报告、参考链接、实验图片——挂在对应的组和目录下面。人会毕业，材料留在组里。</p>
+        <div class="flex flex-wrap gap-2 pt-1">
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">组会笔记</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">研究计划</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">进展报告</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">公式与代码</span>
+          <span class="rounded-full bg-brand-soft px-3.5 py-1.5 text-[13px] text-brand">图片与链接</span>
+        </div>
+      </div>
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5 lg:order-2">
+        <img src="/assets/img/group-knowledge.png" alt="组内知识库：组会记录、计划与链接"
+             width="1416" height="900" class="block w-full rounded-md border border-[#e6eaf0]" loading="lazy">
+      </div>
+    </div>
+
+    <div class="card grid items-center gap-10 p-8 sm:p-11 lg:grid-cols-[540px_minmax(0,1fr)]">
+      <div class="rounded-lg border border-[#e6eaf0] bg-[#f7f9fc] p-5">
+        <div class="mb-3.5 font-display text-[11px] tracking-[0.1em] text-faint">CONFERENCES · 会议列表</div>
+        <div class="overflow-hidden rounded-md border border-[#e6eaf0] bg-white">
+          <table class="w-full text-left">
+            <thead><tr class="bg-[#f2f5f9] text-xs text-[#767d8a]"><th class="p-3 font-normal">会议</th><th class="p-3 font-normal">类型</th><th class="p-3 font-normal">状态</th></tr></thead>
+            <tbody class="text-[12.5px]">
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">MRS Fall Meeting<span class="block text-[11px] text-faint">材料研究学会秋季会议</span></td><td class="p-3 text-muted">官方</td><td class="p-3 text-brand">征稿中</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">ACS Spring<span class="block text-[11px] text-faint">美国化学会春季会议</span></td><td class="p-3 text-muted">官方</td><td class="p-3 text-brand">征稿中</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">E-MRS Spring Meeting<span class="block text-[11px] text-faint">欧洲材料研究学会春季会议</span></td><td class="p-3 text-muted">官方</td><td class="p-3 text-faint">已截稿</td></tr>
+              <tr class="border-t border-[#eef1f5]"><td class="p-3 text-[#2e3440]">ICMAT<span class="block text-[11px] text-faint">国际先进材料技术会议（新加坡）</span></td><td class="p-3 text-muted">官方</td><td class="p-3 text-brand">征稿中</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-[11.5px] leading-relaxed text-faint">会议名称为真实会议；征稿状态为示意，以各会议官网为准。</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-[22px] font-bold leading-[1.5] sm:text-[25px]">组里关心的会议，集中盯一处</h3>
+        <p class="text-[15px] leading-[1.9] text-muted">维护本组关注的会议与期刊列表，标记官方／非官方、状态和官网入口。加入公开列表，也能看到同行在盯哪些会。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── fields ───────────────────────────────────────────── -->
+<section id="fields" class="border-y border-line bg-white py-16 sm:py-[70px]">
+  <div class="wrap grid items-center gap-10 lg:grid-cols-[420px_minmax(0,1fr)] lg:gap-16">
+    <div class="flex flex-col gap-3.5">
+      <h2 class="text-[24px] font-bold leading-[1.5] sm:text-[27px]">不挑学科</h2>
+      <p class="text-[15px] leading-[1.9] text-muted">BettaFish 不内置任何一个领域的知识，它管的是「一群人怎么一起做研究」。</p>
+    </div>
+    <div class="flex flex-wrap gap-2.5">
+      <span class="chip">材料科学</span><span class="chip">化学</span><span class="chip">生命科学</span><span class="chip">物理</span>
+      <span class="chip">工程</span><span class="chip">计算机与人工智能</span><span class="chip">医学与公共卫生</span><span class="chip">地球与环境科学</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── pricing ──────────────────────────────────────────── -->
+<section id="pricing" class="bg-surface py-20 sm:py-24">
+  <div class="wrap">
+    <div class="flex flex-col items-center gap-3 text-center">
+      <h2 class="text-[26px] font-bold sm:text-[30px]">价格</h2>
+      <p class="max-w-2xl text-[15px] leading-relaxed text-muted">下面是协作底座（模块 01 科研组协作）的价格。其余模块可以单独订阅：<span class="text-ink">模块 02–04 每个 $10／人／月；模块 05、06 请联系我们</span>。</p>
+    </div>
+    <div class="mt-11 grid items-start gap-5 md:grid-cols-3">
+      <div class="card flex flex-col gap-4 p-8">
+        <h3 class="text-lg font-medium">个人版　Personal</h3>
+        <p class="text-sm text-muted">想先试试 BettaFish 的时候用这个。</p>
+        <p class="font-display text-[40px] font-bold leading-none">免费</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>不限试用时长</li><li>每个组仅限一名成员</li><li>组只能是私有的</li></ul>
+        <a href="#contact" class="mt-2 rounded-md border border-brand py-3 text-center text-sm font-medium text-brand transition hover:bg-brand hover:text-white">开始使用</a>
+      </div>
+      <div class="card relative flex flex-col gap-4 border-2 border-brand p-8">
+        <span class="absolute -top-3 right-6 rounded-full bg-[#52c41a] px-3 py-1 font-display text-[11px] tracking-wider text-white">BEST VALUE</span>
+        <h3 class="text-lg font-medium">科研组版　Research Group</h3>
+        <p class="text-sm text-muted">适合任何规模的课题组。</p>
+        <p class="flex items-baseline gap-1.5"><span class="font-display text-[40px] font-bold leading-none">$10</span><span class="text-sm text-muted">／人／月</span></p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>私有组与公开组数量不限</li><li>每组成员数量不限</li><li>批注、笔记与组会材料全部共享</li></ul>
+        <a href="#contact" class="btn-primary mt-2 w-full">开始使用</a>
+      </div>
+      <div class="card flex flex-col gap-4 p-8">
+        <h3 class="text-lg font-medium">定制版　Customization</h3>
+        <p class="text-sm text-muted">需要更私密、更可控的方案？</p>
+        <p class="font-display text-[34px] font-bold leading-none">联系我们</p>
+        <div class="h-px bg-[#eef1f5]"></div>
+        <ul class="flex flex-col gap-3 text-sm text-[#4c525c]"><li>本地部署</li><li>定制功能</li><li>由我们的团队对接</li></ul>
+        <a href="#contact" class="btn-ghost mt-2 w-full">联系我们</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── contact ──────────────────────────────────────────── -->
+<section id="contact" class="border-t border-line bg-white py-20 sm:py-24">
+  <div class="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_520px] lg:gap-20">
+    <div class="flex flex-col gap-4">
+      <h2 class="text-[26px] font-bold leading-[1.45] sm:text-[30px]">先把你们组这学期要读的论文放进来</h2>
+      <p class="text-[15px] leading-[1.9] text-muted">个人版永久免费，直接建组就能用。想了解模块搭配或本地部署，写信给我们。</p>
+    </div>
+
+    <form id="contactForm" class="card flex flex-col gap-4 p-7 sm:p-8" novalidate>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-name" class="text-[13px] font-medium">称呼 <span class="text-brand">*</span></label>
+        <input id="cf-name" name="name" type="text" required autocomplete="name" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-email" class="text-[13px] font-medium">邮箱 <span class="text-brand">*</span></label>
+        <input id="cf-email" name="email" type="email" required autocomplete="email" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-org" class="text-[13px] font-medium">单位／课题组</label>
+        <input id="cf-org" name="organisation" type="text" autocomplete="organization" class="rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-topic" class="text-[13px] font-medium">想了解什么</label>
+        <select id="cf-topic" name="topic" class="rounded-md border border-line bg-white px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20">
+          <option>科研组协作（模块 01）</option>
+          <option>文献阅读助手（模块 02）</option>
+          <option>文献检索与引用（模块 03）</option>
+          <option>写作与投稿（模块 04）</option>
+          <option>科研数据库（模块 05）</option>
+          <option>AI 分析流程（模块 06）</option>
+          <option>整包与本地部署</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label for="cf-msg" class="text-[13px] font-medium">留言</label>
+        <textarea id="cf-msg" name="message" rows="3" class="resize-y rounded-md border border-line px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/20"></textarea>
+      </div>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+      <button type="submit" id="cfSubmit" class="btn-primary mt-1 w-full">发送</button>
+      <p id="cfStatus" role="status" aria-live="polite" class="hidden text-[13px]"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ── footer ───────────────────────────────────────────── -->
+<footer class="bg-footer py-12 text-[#e6e9ef]">
+  <div class="wrap flex flex-col justify-between gap-10 sm:flex-row">
+    <div class="flex flex-col gap-2.5">
+      <span class="flex items-center gap-2.5 font-display text-[17px] font-bold"><img src="/assets/img/logo-white.png" alt="" width="22" height="22" class="h-[22px] w-[22px]">BettaFish</span>
+      <span class="text-[13px] text-[#6e7684]">bettafish.site</span>
+    </div>
+    <div class="grid grid-cols-2 gap-8 text-[13px] text-[#99a1af] sm:flex sm:gap-14">
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">产品</span><a href="#modules" class="hover:text-white">模块</a><a href="#collab" class="hover:text-white">科研组协作</a><a href="#pricing" class="hover:text-white">价格</a></div>
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">资源</span><a href="https://bettafish.cc/" class="hover:text-white">登录</a><a href="#contact" class="hover:text-white">联系我们</a></div>
+      <div class="flex flex-col gap-2.5"><span class="text-[#6e7684]">语言</span><span class="text-white">中文</span><a href="/" hreflang="en" class="hover:text-white">English</a></div>
+    </div>
+  </div>
+  <div class="wrap mt-9 border-t border-[#1e232c] pt-5 text-xs text-[#5a606b]">
+    © <span id="year">2026</span> BETTAFISH PTE. LTD.　·　UEN 202220071M
+  </div>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

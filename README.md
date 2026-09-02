@@ -3,8 +3,9 @@
 BettaFish 官网。纯静态 HTML + Tailwind CSS，部署在 GitHub Pages。
 
 ```
-index.html            中文首页
-en/index.html         English homepage
+index.html            English homepage（默认语言，站点根路径）
+zh/index.html         中文首页
+en/index.html         旧路径，noindex + 重定向到 /
 assets/css/tailwind.css   构建产物（由 src/input.css 生成，已提交）
 assets/js/site.js     移动端导航、联系表单
 assets/img/           logo 与产品截图（取自线上产品 betta-fish-ops.github.io）
@@ -23,14 +24,23 @@ npm run serve   # 另开一个终端，http://localhost:4173
 
 改完 HTML 直接提交推送；GitHub Actions 会重新构建 CSS 并部署。
 
-## 上线前必须替换
+**双语约定**：英文是默认语言，位于站点根路径 `/`；中文位于 `/zh/`。
+两份 HTML 是各自独立维护的完整文件，改内容时**两边都要改**，并保持
+`canonical` / `hreflang` / 语言切换链接一致（`x-default` 始终指向 `/`）。
+
+## 已配置
+
+| 位置 | 值 |
+|---|---|
+| `assets/js/site.js` | `FORM_ENDPOINT` = `https://formspree.io/f/xqpkqzly`（失败时降级为 `mailto:`，不会静默失败） |
+| `assets/js/site.js` | `CONTACT_EMAIL` = `hyperturbedd@outlook.com` |
+| 两个 `index.html` | 模块 02–04 每个 $10／人／月；模块 05、06 联系我们 |
+| 两个 `index.html` | 页脚 `BETTAFISH PTE. LTD. · UEN 202220071M`（新加坡主体，不适用 ICP 备案） |
+
+## 仍需留意
 
 | 位置 | 内容 |
 |---|---|
-| `assets/js/site.js` | `FORM_ENDPOINT` — 换成 Formspree／Tally 的真实端点。未替换时表单自动降级为 `mailto:`，不会静默失败 |
-| `assets/js/site.js` | `CONTACT_EMAIL` — 换成真实收件邮箱 |
-| 两个 `index.html` | `[各模块单价待定]` / `[per-module pricing TBC]` |
-| 两个 `index.html` | 页脚 `[公司全称占位]`、`[ICP 备案号占位]` / `[legal entity placeholder]` |
 | 产品截图 | 三张截图取自线上产品，界面中出现了用户名 `tangdayu` 与头像（原本就公开在产品站上）。若不想露出，需要重新截图 |
 | 会议表格 | 会议名称为真实会议，征稿状态是示意值，需要定期更新或改成动态数据 |
 
